@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello</title>
+  <script src="./index.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    pre {
+      white-space: pre-wrap;
+      font-family: 'Courier New', Courier, monospace;
+      overflow-wrap: break-word;
+    }
+  </style>
+</head>
+
+<body>
+  <div style="width: 800px; margin: auto;">
+
+    <h3>URL</h3>
+    <input
+      style=" line-height: 30px; font-size: 24px; width: 100%; outline: none; border: none; border-bottom: 1px solid skyblue;"
+      type="text" id="URLInput">
+    <h3>method</h3>
+    <input type="radio" name="method" id="Get" value="GET" checked>get
+    <input type="radio" name="method" id="Post" value="POST">post <br>
+    <div id="KeyValue" style="display: none;">
+      <h1>Key-Value Editor</h1>
+
+      <label for="key">Key:</label>
+      <input type="text" id="key">
+
+      <label for="value">Value:</label>
+      <input type="text" id="value">
+
+      <button id="addBtn">Add Key-Value</button>
+      <button id="deleteBtn">Delete Key-Value</button>
+      <button id="resetBtn">Reset</button>
+      <button id="download">SendFile</button>
+
+      <h2>Current Data Object:</h2>
+      <pre id="dataObject"></pre>
+    </div>
+    <button id="SendButton">Send</button>
+    <h3>result</h3>
+    <pre id="Result"
+      style="max-width: 800px; box-shadow: 0px 0px 5px grey; background-color: azure; font-size: 16px; font-weight: bold; color: black; line-height: 30px; padding: 20px; border-radius: 5px;">
+    </pre>
+  </div>
+</body>
+
+</html>
